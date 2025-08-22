@@ -1,29 +1,15 @@
 import './App.css'
+import Gallery from './components/Gallery';
 
-function Profile(){
-  return(
-    <img src='https://i.imgur.com/MK3eW3Am.jpg' alt='Nis ' />
-  )
-}
 
 export default function App(){
   return(
-    <section>
-      <h1>Our Amazing scientist</h1>
     <div>
-      <Profile/>
-   
-      <Profile/>
-
-      
-      <Profile/>
-
-      <Profile/>
-
-      <Profile/>
-
+    <h1 style={{color:"black"}}>Welcome to Number Guessing Game</h1>
+    <p>hmm, I am thinking of a number. Can you guess it??</p>
+    
+      <Gallery/>
     </div>
-    </section>
   );
 }
 
