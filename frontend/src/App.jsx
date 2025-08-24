@@ -1,15 +1,29 @@
 import './App.css'
 import Gallery from './components/Gallery';
+import Avatar from './components/Avatar';
 
-
-export default function App(){
+function Card({children}){
   return(
-    <div>
-    <h1 style={{color:"black"}}>Welcome to Number Guessing Game</h1>
-    <p>hmm, I am thinking of a number. Can you guess it??</p>
-    
-      <Gallery/>
+    <div className='card'>
+      {children}
     </div>
+  );
+}
+
+export default function Profile(){
+  return(
+    <Card>
+      <Avatar 
+      size={100}
+      person={
+        {
+          name:'Katsuko Saruhashi',
+          imageId: 'YfeOqp2'
+        }
+      }
+      />
+    </Card>
+    
   );
 }
 
